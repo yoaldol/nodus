@@ -1,0 +1,6 @@
+- name: "SQL Script Execution"
+  hosts: all
+  tasks:
+  
+    - win_command: sqlcmd -S WINDOWSSQL\SQLEXPRESS -i "C:\Users\ylopez\Documents\SQLQueryCreate.sql"
+      register: sqlcmd_out
