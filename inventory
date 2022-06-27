@@ -1,12 +1,14 @@
 [windows]
-nodo-winser2019.lab.local
+172.19.175.83
 
 [windows:vars]
 ansible_user=administrator
 ansible_port=5986
 ansible_password=Yoe6905469-t
 ansible_connection=winrm
-ansible_shell_type=cmd
+ansible_winrm_transport=basic
+ansible_winrm_server_cert_validation=ignore
+#ansible_shell_type=cmd
 #ansible_python_interpreter="\Users\
 #ansible_shell_type=powershell
 #ansible_shell_executable=None
