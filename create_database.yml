@@ -3,5 +3,5 @@
   hosts: all
   
   tasks:
-    - win_command: sqlcmd -S {{ SQLEXPRESS }} -i "C:\\Users\\Administrator\\Documents\\createdbtesting.sql"
+    - win_command: sqlcmd -S {{ NODO-WINSER2019\SQLEXPRESS }} -i "C:\\Users\\Administrator\\Documents\\createdbtesting.sql"
       register: sqlcmd_out
