@@ -1,0 +1,13 @@
+---
+- hosts: all
+  gather_facts: false
+  task:
+    - name: instalar paqueteria a vdi enfermeria
+      win_chocolatey:
+        name:
+        - vscode
+        - git
+        - chromium
+        - dropbox
+        - docker-desktop
+        state: latest
