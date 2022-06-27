@@ -1,0 +1,10 @@
+---
+- name: Run command that only runs if folder exists and runs from a specific folder
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - win_command: wbadmin -backupTarget:C:\backup\
+      args:
+        chdir: C:\Users\Administrator\Documents\
+        creates: C:\backup\
