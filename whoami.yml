@@ -1,0 +1,8 @@
+---
+- name: Save the result of 'whoami' in 'whoami_out'
+  hosts: all
+  gather_facts: false
+
+  tasks:
+    - win_command: whoami
+      register: whoami_out
