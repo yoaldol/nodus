@@ -6,5 +6,5 @@
   tasks:
     - win_command: wbadmin -backupTarget:C:\backup\
       args:
-        chdir: C:\Users\Administrator\Documents\
+        chdir: C:\Users\Administrator\Documents
         creates: C:\backup\
