@@ -3,7 +3,7 @@
   hosts: all
   gather_facts: false
   
-  task:
+  tasks:
     - name: instalar paqueteria a vdi enfermeria
       win_chocolatey:
         name:
