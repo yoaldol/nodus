@@ -1,6 +1,8 @@
 ---
-- hosts: all
+- name: add user
+  hosts: all
   gather_facts: false
+  
   task:
     - name: instalar paqueteria a vdi enfermeria
       win_chocolatey:
