@@ -1,10 +1,10 @@
 ---
-- name: add user
+- name: Packages
   hosts: all
   gather_facts: false
   
   tasks:
-    - name: instalar paqueteria a vdi enfermeria
+    - name: Install packages
       win_chocolatey:
         name:
         - vscode
