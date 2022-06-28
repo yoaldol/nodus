@@ -7,9 +7,6 @@
     - name: Install packages
       win_chocolatey:
         name:
-        - vscode
         - git
-        - chromium
-        - dropbox
         - docker-desktop
         state: latest
