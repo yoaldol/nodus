@@ -7,6 +7,5 @@
     - name: Install packages
       win_chocolatey:
         name:
-        - git
-        - docker-desktop
+        - vscode
         state: latest
